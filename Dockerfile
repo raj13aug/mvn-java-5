@@ -6,7 +6,7 @@ ARG BASE_URL= http://archive.apache.org/dist/maven/maven-2/${MAVEN_VERSION}/bina
 
 
 # Install Java.
-RUN apk --update --no-cache add openjdk7 curl
+RUN apk --update --no-cache add curl
 
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref \
  && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz \
