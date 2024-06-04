@@ -16,7 +16,7 @@ ENV MAVEN_HOME /usr/share/maven
 ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"
 
 # install java
-COPY jdk-1_5_0_22-linux-amd64.bin /tmp/jdk-1_5_0_22-linux-amd64.bin
+ADD jdk-1_5_0_22-linux-amd64.bin /tmp/jdk-1_5_0_22-linux-amd64.bin
 RUN \
     echo yes|sh /tmp/jdk-1_5_0_22-linux-amd64.bin ;\
     rm /tmp/jdk-1_5_0_22-linux-amd64.bin
