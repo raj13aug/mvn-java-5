@@ -28,4 +28,4 @@ ENV PATH /jdk1.5.0_22/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbi
 
 
 # Define default command.
-CMD ["mvn", "--version"]
+CMD ["mvn"]
